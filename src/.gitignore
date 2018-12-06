@@ -1,0 +1,4 @@
+qt/locale/*.qm
+Triplesevend
+obj/
+leveldb/*.a.*
