@@ -13,7 +13,8 @@ Airdrop + Mining
 rpcport: 62092
 port: 62093
 
-
+Tripleseven has already been launched with CHECKPOINTS included, to allow a very secure network
+Every month, new checkpoint will be added
 
 
 
