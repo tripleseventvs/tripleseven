@@ -1,3 +1,23 @@
+Compile Daemon:
+
+apt-get update && apt-get upgrade
+apt-get install ntp git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev
+
+wget http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.8.tar.gz && tar -zxf download.php\?file\=miniupnpc-1.8.tar.gz && cd miniupnpc-1.8/
+make && make install && cd .. && rm -rf miniupnpc-1.8 download.php\?file\=miniupnpc-1.8.tar.gz
+
+cd tripleseven
+cd src
+mkdir obj
+cd leveldb
+make clean
+cd tripleseven
+cd src
+make -f makefile.unix USE_UPNP=- USE_QRCODE=- USE_IPV6=-
+strip triplesevend
+
+
+
 TRIPLESEVEN - TVS
 
 Tripleseven "TVS"
