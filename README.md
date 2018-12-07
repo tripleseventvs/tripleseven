@@ -6,6 +6,7 @@ apt-get install ntp git build-essential libssl-dev libdb-dev libdb++-dev libboos
 wget http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.8.tar.gz && tar -zxf download.php\?file\=miniupnpc-1.8.tar.gz && cd miniupnpc-1.8/
 make && make install && cd .. && rm -rf miniupnpc-1.8 download.php\?file\=miniupnpc-1.8.tar.gz
 
+git clone https://github.com/tripleseventvs/tripleseven
 cd tripleseven
 cd src
 mkdir obj
